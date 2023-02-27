@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:single-spa:angular-app1": "ng build angular-app1 --configuration production",
-    "serve:single-spa:angular-app1": "ng s --project angular-app1 --disable-host-check --port 4200 --live-reload false"
+    "serve:single-spa:angular-app1": "ng s --project angular-app1 --disable-host-check --port 4500 --live-reload false"
   },
   "private": true,
   "dependencies": {
@@ -16,10 +16,13 @@
     "@angular/common": "^15.1.0",
     "@angular/compiler": "^15.1.0",
     "@angular/core": "^15.1.0",
+    "@angular/fire": "^7.5.0",
     "@angular/forms": "^15.1.0",
     "@angular/platform-browser": "^15.1.0",
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.1.0",
+    "bootstrap": "^5.2.3",
+    "crypto-js": "^4.1.1",
     "rxjs": "~7.8.0",
     "single-spa": ">=4.0.0",
     "single-spa-angular": "^8.0.1",
@@ -31,7 +34,9 @@
     "@angular-devkit/build-angular": "^15.1.2",
     "@angular/cli": "~15.1.2",
     "@angular/compiler-cli": "^15.1.0",
+    "@types/crypto-js": "^4.1.1",
     "@types/jasmine": "~4.3.0",
+    "css-loader": "^6.7.3",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",

@@ -1,17 +1,14 @@
 import { APP_BASE_HREF } from '@angular/common';
 import { enableProdMode, NgZone } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { bootstrapApplication } from '@angular/platform-browser';
-
 import { Router, NavigationStart, provideRouter } from '@angular/router';
 
-import {
-  singleSpaAngular,
-  getSingleSpaExtraProviders,
-} from 'single-spa-angular';
+import { singleSpaAngular, getSingleSpaExtraProviders } from 'single-spa-angular';
 import { AppComponent } from './app/app.component';
 import { EmptyRouteComponent } from './app/empty-route/empty-route.component';
-
-import { environment } from './environments/environment';
+import { AppModule } from './app/app.module';
+import { environment } from './environments/environment.development';
 import { singleSpaPropsSubject } from './single-spa/single-spa-props';
 
 if (environment.production) {

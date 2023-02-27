@@ -1,14 +1,16 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  standalone: true,
-  imports: [CommonModule, RouterOutlet],
 })
-export class AppComponent {
-  title = 'angular-app2';
+export class AppComponent implements OnInit {
+  showHeader: boolean = true;
+  title = 'host';
+  // constructor( private userSVC: UserService) {}
+  ngOnInit(): void {
+    // this.showHeader = this.userSVC.getHeader();
+    // console.log('Header: ', this.userSVC.getHeader());
+  }
 }
